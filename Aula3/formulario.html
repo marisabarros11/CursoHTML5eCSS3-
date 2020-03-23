@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formulário</title>
+	</head>
+	<body>
+		<form method="post" action="../Aula04/tabela.htm">
+			<fieldset>
+				<legend>Formulário de Cadastro</legend>
+				
+				<div>
+					<p>
+					<label for="nome">Nome:</label>
+					<input type="text" name="name" id="name" />
+				</div>
+
+				<div>
+					<hr>
+					Em Qual Dos Gêneros Se Identifica:
+					<p>
+					<label for="agereno">Agênero(Não se identifica com nenhum gênero)</label>
+					<input type="radio" name="agenero" id="agenero" /><br/>
+					<label for="fluido">Gênero Fluido(Que flui entre os gêneros masculino, neutro e feminino, conforme se sinta em cada dia e em cada momento)</label>
+					<input type="radio" name="fluido" id="fluido" /><br/>
+					<label for="trans">Transgênero(Que não se sente de acordo com o gênero relacionado ao seu sexo biológico)</label>
+					<input type="radio" name="trans" id="trans" /><br/>
+					<label for="mulhercis">Mulher Cis(Que tem o sexo de nascimento conectado com o gênero feminino)</label>
+					<input type="radio" name="mulhercis" id="mulhercis" /><br/>
+					<label for="homemcis">Homem Cis(Que tem o sexo de nascimento conectado com o gênero masculino)</label>
+					<input type="radio" name="homemcis" id="homemcis" /><br/>
+					<label for="transexual">Transexual(Que possui identidade de gênero diferente da designada ao nascimento e que pode optar por redesignação sexual por meio de intervenção cirúrgica)</label>
+					<input type="radio" name="transexual" id="transexual" /><br/>
+					.<br>
+					.<br>
+				</div>
+
+				<div>
+					<hr>
+					Minhas comidas favoritas:
+					<input type="checkbox" name="comidas" id="macarrao" />
+					<label for="macarrao">Macarrão</label>
+					<input type="checkbox" name="comidas" id="japonesa" />
+					<label for="japonesa">Japonesa</label>
+					<input type="checkbox" name="comidas" id="italiana" />
+					<label for="italiana">Italiana</label>
+				</div>
+
+				<div>
+					<hr>
+					<label for="msg">Mensagem</label>
+					<textarea name="msg" id="msg"></textarea>
+				</div>
+
+				<div>
+					<hr>
+					<label for="estado">Estado:</label>
+					<select name="estado" id="estado">
+						<optgroup label="Sul"></optgroup>
+							<option>Santa Catarina</option>
+					</select>		
+				</div>
+
+				</div>
+					<hr>
+					<label for="senha">Senha</label>
+					<input type="
+					password" name="senha" id="senha" />
+				<div>
+
+				<div>
+					<hr>
+					<label for="decordo">Li e estou de acordo</label>
+					<input type="radio" name="deacordo" id="deacordo" />
+				</div>
+			</fieldset>
+			<p>
+			<div>
+					<input type="submit" value="Enviar" />
+				</div>
+		</form>
+	</body>
+</htmal>
