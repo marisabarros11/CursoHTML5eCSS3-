@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/* BACKGROUND */
+#bg{
+	background-color: red;
+	background-image: url('samuu.png');
+	background-repeat: repeat-x;
+}
+#bg main{
+	width: 100%; 
+	height: 1000px;
+
+}
+
+#bg main .elemento{
+	width: 600px;
+	height: 500px;
+	background-color: blue;
+	background-image: url('samuu.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+}
+
+/* FONTS */
+
+#fonts h1{
+	font-variant: small-caps;
+	text-align: center;
+	text-decoration: overline underline;
+}
+#fonts p{
+	font-family: Arial;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.5em;
+
+	color: blue;
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 20px;
+	word-spacing: 10px;
+	letter-spacing: 20px;
+} 
