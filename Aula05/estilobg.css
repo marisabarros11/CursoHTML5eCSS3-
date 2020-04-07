@@ -44,3 +44,24 @@ body{
 	word-spacing: 10px;
 	letter-spacing: 20px;
 } 
+/* LINKS */
+#links a:link{
+	text-decoration: none;
+	color: orange; 
+}
+
+#links a:visited{
+	color: green;
+}
+
+#links a:focus{
+	color: blue;
+}
+
+#links a:active{
+	color: yellow;
+}
+
+#links a:hover{
+	color: purple;
+}
