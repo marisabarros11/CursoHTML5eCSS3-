@@ -1,0 +1,5 @@
+/* LISTAS */
+#listas li {
+	list-style-image: url('check_2.png');
+	list-style-position: inside;
+}
