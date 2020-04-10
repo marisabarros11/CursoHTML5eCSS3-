@@ -54,3 +54,139 @@
 	top: 50%;
 	margin-top: -25px;
 }
+/* FLOAT */
+
+/* #float nav{
+	float: left;
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+}*/
+#float nav ul{
+	list-style: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: yellow;
+	width: 300px;
+	height: 50px; 
+}
+
+#float nav li{
+	float: left;
+	margin: 10px;
+}
+
+#float main{
+	float: right;
+	width: 500px;
+	height: 100px;
+	background-color: red;
+}
+#float .floatleft{
+	float: left;
+	width: 183px;
+	height: 40px;
+	background-color: orange;
+	border: 1px solid black;
+}
+
+#float .clear{
+	clear: both;
+}
+
+/* SPRITE */
+#sprite ul{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style: none;
+}
+
+#sprite ul li{
+	float: left;
+	margin-right: 5px;
+}
+
+#sprite .icone_passaros{
+	width: 70px;
+	height: 70px;
+	float: left;
+	background-color: red;
+	background-image: url('sprite_1.jpg'); 
+	background-image: no-repeat;
+	text-indent: -1000px;
+	overflow: hidden;
+}
+
+#sprite .icone_passaro1{
+	background-position: -5px -5px;
+}
+
+#sprite .icone_passaro1:hover{
+	background-position: -5px -75px
+}
+
+#sprite .icone_passaro2{
+	background-position: -75px -5px;
+}
+
+#sprite .icone_passaro2:hover{
+	background-position: -75px -75px
+}
+ 
+#sprite .icone_passaro3{
+	background-position: -150px -5px;
+}
+
+#sprite .icone_passaro3:hover{
+	background-position: -150px -75px
+}
+
+#sprite .icone_passaro4{
+	background-position: -225px -5px;
+}
+
+#sprite .icone_passaro4:hover{
+	background-position: -225px -75px
+}
+
+/* Seletor Complexo*/
+#seletor_complexo h1 + p{
+	color: red;
+}
+#seletor_complexo a[href]{
+	color: red;
+}
+#seletor_complexo a[href="http://www.4linux.com.br"]{
+	/*color: orange;*/
+} 
+
+#seletor_complexo a[href^="http://"]{
+	/*color: green;*/
+} 
+
+#seletor_complexo a[href$=".com.br"]{
+	/*color: lime;*/
+}
+#seletor_complexo a[href*="4linux"]{
+	color: yellow;
+} 
+
+#seletor_complexo div p > a{
+	color: green;
+}
+
+#seletor_complexo div input:checked{
+	height: 100px;
+	width: 100px;
+}
+
+#pseudoclasse table tr:nth-child(odd){
+	background-color: blue;
+}
+
+#pseudoclasse table tr:nth-child(even){
+	background-color: green;
+}
