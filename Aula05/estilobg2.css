@@ -1,6 +1,6 @@
 *{
 	-webkit-box-sizing: border-box;
-	-mox-webkit-box-sizing: border-box;
+	-moz-webkit-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -189,4 +189,61 @@
 
 #pseudoclasse table tr:nth-child(even){
 	background-color: green;
+}
+#pseudoclasse p:empty{
+	background-color: black;
+	width: 100px;
+	height: 20px;
+}
+#pseudoclasse input:disabled{
+	background-color: yellow;
+}
+
+#pseudoclasse input:enabled{
+	background-color: green;
+}
+
+#pseudoclasse2 h1:first-child{
+	background-color: purple;
+}
+
+#pseudoclasse2 h1:last-child{
+	background-color: maroon;
+}
+
+#pseudoclasse2 p:first-of-type{
+	background-color: green;
+}
+
+#pseudoclasse2 p:last-of-type{
+	background-color: orange;
+}
+
+#pseudoclasse2 p:nth-child(3){
+	background-color: red;
+}
+
+#pseudoclasse2 p:nth-of-type(3){
+	background-color: blue;
+}
+
+#pseudoclasse2 p:not(.paragrafo){
+	color: silver;
+}
+
+#pseudoclasse2 p::first-letter{
+	font-size: 50px;
+	color: #8a2b32;
+}
+
+#pseudoclasse2 p::first-line{
+	background-color: yellow
+}
+
+#pseudoclasse2 p::before{
+	content: "Leia esse paragrafo:";
+}
+
+#pseudoclasse2 p::after{
+	content: " Lembrar disso!";
 }
