@@ -1,0 +1,26 @@
+div{
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	border: 2px double red;
+	color: white;
+}
+.background_clip{
+	background-color: black;
+	background-clip: border-box;
+}
+
+.background_origin{
+	background-image: url('gatos.jpg');
+	background-repeat: no-repeat;
+	background-color: black;
+	background-origin: border-box;
+}
+
+.background_size{
+	background-image: url('gatos.jpg');
+	background-repeat: no-repeat;
+	background-color: green;
+	background-size: 100%;
+}
+
