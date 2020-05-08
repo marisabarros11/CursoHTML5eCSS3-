@@ -1,3 +1,12 @@
+body{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
+background: #627d4d; /* Old browsers */
+background: -moz-linear-gradient(left,  #627d4d 0%, #1f3b08 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #627d4d 0%,#1f3b08 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #627d4d 0%,#1f3b08 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=1 ); /* IE6-9 */
+
+}
 div{
 	width: 200px;
 	height: 200px;
@@ -84,4 +93,82 @@ div{
 .matrix{
 	color: black;
 	transform: matrix(1.0 ,0.8, 0, 1.0,20,40);
+}
+
+.rotate_x{
+	color: black;
+	transform: rotateX(180deg);
+}
+
+.rotate_y{
+	color: black;
+	transform: rotateY(180deg);
+}
+
+.rotate_z{
+	color: black;
+	transform: rotateZ(90deg);
+}
+
+.perspectiva_fora{
+	position: relative;
+	height: 150px;
+	width: 150px;
+	margin: 50px;
+	padding: 10px;
+	border: 1px solid red;
+	perspective: 160px;
+}
+.perspectiva_dentro{
+	width: 50px;
+    height: 50px;
+	padding: 48px;
+	position: absolute;
+	border: 1px solid red;
+	background: black;
+	transform: rotateX(45deg);
+}
+
+.backface_hidden{
+	backface-visibility: hidden;
+}
+
+.backface_visible{
+	backface-visibility: visible;
+}
+
+@-webkit-keyframes rodar{
+	from{
+		-webkit-transform:rotate(0deg);
+	}
+
+	to{
+		-webkit-transform:rotate(360deg);
+	}
+}
+
+@keyframes rodar{
+	from{
+		transform:rotate(0deg);
+	}
+
+	to{
+		transform:rotate(360deg);
+	}
+}
+
+.animation{
+	-webkit-animation-name: rodar;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: lienar;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+
+	/*-webkit-animation: rodar 1s linear infinite alternate;*/
+
+	animation-name: rodar;
+	animation-duration: 1s;
+	animation-timing-function: lienar;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
